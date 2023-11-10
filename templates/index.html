@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Summarizer</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h1>Summarize your text in one click</h1>
+        <p>Paste your text into the text area below and click the button.</p>
+        <form action="/" method="post" id="textForm">
+          <textarea
+            class="form-control"
+            id="inputTextArea"
+            rows="10"
+            cols="300"
+            name="text"
+            required
+            placeholder="Enter your text here... (Min length is 200 chars. Max length is 100,000 chars.)"
+            maxlength="100000"
+          ></textarea>
+          <div class="btn-container">
+            <button
+              type="submit"
+              class="btn btn-outline-dark"
+              id="summarizeButton"
+            >
+              Summarize
+            </button>
+          </div>
+          <div class="result-container">
+            <textarea
+              class="form-control"
+              id="summaryTextArea"
+              rows="10"
+              cols="300"
+              name="text"
+              required
+              placeholder="Your result will be here..."
+            ></textarea>
+          </div>
+        </form>
+        <div class="loader-overlay">
+          <div class="loader"></div>
+        </div>
+        <div class="btn-container">
+          <button id="reset-button" class="btn btn-outline-dark">Reset</button>
+        </div>
+      </div>
+    </div>
+    {% block script %}
+    <script src="/static/js/script.js"></script>
+    {% endblock %}
+  </body>
+</html>
