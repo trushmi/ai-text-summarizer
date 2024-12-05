@@ -78,7 +78,7 @@ python3 server.py
 ```
 http://localhost:5000/
 ```
+You should now see the application running. If you encounter any issues, please check that all previous steps have been followed correctly.
 
-## Author
-
-Iryna Trush. Software Engineer with a background in communications, graduated from the Software Engineering Program at Hackbright Academy. [LinkedIn](https://www.linkedin.com/in/trushmi/). 
+________________________
+See my other project, [Text Summarizer](https://github.com/trushmi/ai-text-summarizer), a web application designed to provide quick and efficient summaries of large texts.
