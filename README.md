@@ -81,4 +81,4 @@ http://localhost:5000/
 You should now see the application running. If you encounter any issues, please check that all previous steps have been followed correctly.
 
 ________________________
-See my other project, [Text Summarizer](https://github.com/trushmi/ai-text-summarizer), a web application designed to provide quick and efficient summaries of large texts.
+See my other project, [Text to Speech Converter](https://github.com/trushmi/text-to-speech-converter), a fully responsive web application built with Flask that converts text into speech in just one click.
